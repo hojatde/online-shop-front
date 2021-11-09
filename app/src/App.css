@@ -1,0 +1,394 @@
+html{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    direction: rtl;
+    font-family: -apple-system;
+}
+body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation{
+    display: flex;
+    background-color: rgb(46, 46, 51);
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.navigation ul{
+    display: inline-block;
+}
+.navigation li{
+    display: inline;
+    padding-left: 10px;
+}
+.navigation a{
+    color: rgb(252, 242, 155);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.navigation p{
+    display: inline;
+    border-radius: 2px;
+    outline: none;
+    
+    padding: 5px;
+    top: 0;
+}
+.homeBox{
+    margin-top: 20px;
+}
+.username{
+    padding: 10px;
+    background-color: rgb(154, 235, 116);
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    display: inline-block;
+}
+#logOut{
+    display: inline;
+    background-color: rgb(224, 122, 122);
+    color: black;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 0px!;
+}
+
+
+.products{
+    width: 80%;
+    max-width: 80%;
+    
+    margin: auto;
+    margin-top: 10px;
+    padding: 30px;
+}
+.product{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(23, 18, 29);
+}
+button{
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto 10px auto;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+}
+
+
+/* THIS IS FOR BUTTON  */
+.sucsess{
+    background-color: rgb(112, 204, 112);
+}
+.delete{
+    background-color: red;
+}
+.next{
+    background-color: rgb(204, 204, 105);
+}
+
+.AddProduct{
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.AddProduct input,label,button,textarea{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: space-between;
+}
+.AddProduct label,button{
+    margin-top: 20px;
+}
+.AddProduct input{
+    padding: 10px;
+    border: none;
+    background-color: rgb(220, 220, 243);
+    border-radius: 3px;
+}
+.AddProduct textarea{
+    text-align: right;
+    padding: 10px;
+    border: none;
+    resize: none;
+    background-color: rgb(219, 219, 245);
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.column2 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.column4 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.cartTable {
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  
+.cartTable td, .cartTable th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.cartTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+.cartTable tr:hover {background-color: #ddd;}
+
+.cartTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.cart{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-bottom: 20px;box-shadow: 0px 0px 15px;
+}
+.cart p{
+    display: block;
+    text-align: right;
+    direction: rtl;
+}
+.cartBox{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.signUp{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border:2px solid rgb(104, 100, 100);
+    border-radius: 10px;
+}
+
+.signUp input{
+    direction: ltr;
+    border: 1px rgb(110, 109, 109) solid;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+}
+.signUp label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.signUp button{
+    border: none;
+}
+
+.inputError{
+    display: block;
+    padding: 10px;
+    background-color: rgb(248, 87, 87);
+    border-radius: 2px;
+    color: rgb(247, 236, 236);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sucssesMessage{
+    padding: 10px;
+    background-color: rgb(91, 163, 62);
+    border-radius: 2px;
+    color: rgb(247, 236, 236);
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    /* height: 40%;
+    max-height: 40%; */
+}
+.showAlert{
+    position: fixed;
+    padding: 10px;
+    background-color: chartreuse;
+    top: 20px;
+    border-radius: 2px;
+    right: 50%;
+    margin-right: -400px;
+    width: 800px;
+    text-align: center;
+}
+.failed,.unValidToken{
+    background-color: rgb(231, 135, 135);
+}
+
+.active{
+    color: chartreuse !important;
+}
+
+.search{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 2px;
+}
+.search label,input{
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+.search input{
+    background-color: #dddddd8c;
+    border-radius: 2px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    width: 50%;
+}
+.search button{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 0px !important;
+}
+
+.sortBy label{
+    display: inline-block;
+}
+.sortBy select{
+    margin-right: 5px;
+    font-size: 1.2rem;
+    color: rgb(51, 51, 58);
+    padding: 5px;
+    background-color: #dddddd8c;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.sortBy option{
+    background-color: #dddddd8c;
+    color: rgb(62, 62, 70);
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.imageDiv{
+    display: inline-block;
+    width: 50%;
+}
+.cartTitle{
+    display: inline;
+}
+.sendComments{
+    margin-top: 40px;
+    border: 3px ridge rgb(104, 48, 22);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(90, 40, 17);
+}
+.sendComments div{
+    margin-top: 20px;
+    direction: rtl;
+    text-align: right;
+    margin-right: 20px;
+}
+.sendComments label{
+    display: inline;
+}
+.sendComments input[type="text"]{
+    margin-right: 5px;
+    background-color: rgb(217, 217, 248);
+    padding: 0px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+.sendComments input[type="range"]{
+    -webkit-appearance: none;
+    background-color: rgb(173, 203, 231);
+    padding: 5px;
+    border-radius: 5px;
+}
+#comment{
+    margin-top: 10px;
+    resize: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: right;
+    font-family: inherit;
+    border-radius: 5px;
+}
+#pay{
+    display: block !important;
+}
+.sucssesPay{
+    margin-top: 20px;
+}
+.sucssesPay p{
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(44, 139, 44);
+    color:whitesmoke;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.productsNav{
+    border-bottom: 3px solid rgb(0 0 0 / 48%);
+    margin-bottom: 20px;
+}
+.productsNav div,input,p{
+    display: inline-block;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
